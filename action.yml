@@ -1,0 +1,21 @@
+name: 'AI Seasons Greetings'
+description: 'Generate seasons greetings with Azure OpenAI'
+inputs:
+  prompt:  # id of input
+    description: 'Let the AI know who the message is for and provide context about the person.'
+    required: true
+    default: 'Malte is a friend of mine'
+  api-key:
+    description: 'The API key for the Azure OpenAI API'
+    required: true
+    default: '1234567890'
+  endpoint:
+    description: 'Your endpoint for the Azure OpenAI API'
+    required: true
+    default: ''
+outputs:
+  seasons-greeting: # id of output
+    description: 'The AI generated Christmas greeting'
+runs:
+  using: 'node20'
+  main: 'index.js'
