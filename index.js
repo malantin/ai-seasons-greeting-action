@@ -34,6 +34,7 @@ try {
     const apikey = core.getInput('api-key');
     
     makePostRequest(prompt,apikey).then(response => {
+        console.log(response);
         core.setOutput("seasons-greeting", response);
     }).catch(error => {
         core.setFailed(error.message);
