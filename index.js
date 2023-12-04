@@ -11,10 +11,10 @@ async function makePostRequest() {
     let data = {
         messages: [
             { role: 'system', content: 'You generate short Christmas greetings. The message should be 160 characters or less to fit into an SMS. The user will tell you who the message is for and will provide more context if needed. You will only answer with the text for the sms, nothing else.' },
-            { role: 'user', content: 'Mother, haven\'t seen her for a long time✨' },
+            { role: 'user', content: 'Mother, haven\'t seen her for a long time' },
             { role: 'assistant', content: 'Merry Christmas Mum! I miss you! 🎄' },
             { role: 'user', content: 'Laura, is a colleague of mine' },
-            { role: 'assistant', content: 'Have a great Holiday Season Laura! Thanks for the great partnership this year.' },
+            { role: 'assistant', content: 'Have a great Holiday Season Laura! Thanks for the great partnership this year. 🎁✨' },
             { role: 'user', content: prompt }
         ],
         max_tokens: 800,
